@@ -21,6 +21,8 @@ import math
 #        -- IN the loop?
 #        -- AFTER the loop?
 # ----------------------------------------------------------------------
+
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_more_cosines()
@@ -73,11 +75,12 @@ def run_test_sum_more_cosines():
     print('Test 2 expected:', expected, '(approximately)')
     print('       actual:  ', answer)
 
-    #Test 3
+    # Test 3
     expected = 1
     answer = sum_more_cosines(0, 0)
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
+
 
 def sum_more_cosines(m, n):
     """
@@ -111,6 +114,7 @@ def sum_more_cosines(m, n):
         total = total + (math.cos(m + k))
 
     return total
+
 
 def run_test_count_sines_from():
     """ Tests the   count_sines_from   function. """
@@ -185,7 +189,6 @@ def count_sines_from(m, n):
             count += 1
 
     return count
-
 
 
 def run_test_count_sines_vs_cosines():
@@ -286,4 +289,6 @@ def count_sines_vs_cosines(m):
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
+
+
 main()
